@@ -1,29 +1,41 @@
-# 📚 API de Biblioteca
+# 📚 API Biblioteca - Spring Boot
 
-API REST para gerenciamento de livros em uma biblioteca.
+Uma API RESTful para gerenciamento de biblioteca desenvolvida em Spring Boot.
 
-## 👥 Integrantes
-- Wesley Wiltuschnig - Desenvolvimento completo
+## 👥 Integrantes do Grupo
+- **Wesley Wiltuschnig** - Desenvolvimento completo da API
 
-## 🚀 Como Executar
+## 🚀 Tecnologias Utilizadas
+- Java 17+
+- Spring Boot 3.x
+- Spring Data JPA
+- H2 Database (ou seu banco de dados)
+- Maven/Gradle
 
-### Pré-requisitos:
-- Java 17
-- Maven 3.6+
-
-### Passos:
-1. Clone o projeto
-2. Configure o `application.properties` com suas credenciais do Supabase
-3. Execute: `mvn spring-boot:run`
-
-### Endpoints:
+### Livros
 - `GET /api/livros` - Lista todos os livros
 - `GET /api/livros/{id}` - Busca livro por ID
-- `POST /api/livros` - Adiciona novo livro
-- `GET /api/livros/teste` - Teste da API
+- `POST /api/livros` - Cria um novo livro
+- `PUT /api/livros/{id}` - Atualiza um livro existente
+- `DELETE /api/livros/{id}` - Remove um livro
 
-## 🛠️ Tecnologias
-- Spring Boot 3.2.0
-- PostgreSQL (Supabase)
-- Spring Data JPA
-- Maven
+### Pré-requisitos
+- Java 17 ou superior
+- Maven 3.6+ ou Gradle
+- Git
+
+### Passos para execução
+```bash
+# Clone o repositório
+git clone [seu-repositorio]
+
+# Entre na pasta do projeto
+cd [nome-do-projeto]
+
+# Execute a aplicação
+./mvnw spring-boot:run
+# ou
+mvn spring-boot:run
+
+# A aplicação estará disponível em:
+# http://localhost:8080
